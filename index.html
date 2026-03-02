@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bryson Landscaping | Tallmadge, Ohio</title>
+<meta name="description" content="Bryson Landscaping provides professional landscaping, hardscaping, concrete, drainage, fencing, and snow removal services in Tallmadge, Ohio. Get your FREE estimate today.">
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --red:#8B0000;
+    --darkred:#5a0000;
+    --silver:#c0c0c0;
+    --white:#ffffff;
+    --earth:#6b4f3a;
+    --dark:#111;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--white);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+h1,h2,h3{
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+section{padding:90px 8%}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    margin:10px 10px 0 0;
+    background:var(--red);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s ease;
+}
+.btn:hover{
+    background:var(--darkred);
+    transform:translateY(-3px);
+}
+.btn-outline{
+    background:transparent;
+    border:2px solid #fff;
+}
+.btn-outline:hover{
+    background:var(--white);
+    color:var(--red);
+}
+
+header{
+    position:fixed;
+    width:100%;
+    background:#fff;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+}
+header h3{color:var(--red)}
+header nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+header nav a:hover{color:var(--red)}
+
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    overflow:hidden;
+}
+
+/* Slideshow background layer */
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    animation:slideShow 18s infinite;
+    z-index:0;
+}
+
+/* Dark overlay for readability */
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(rgba(0,0,0,.7), rgba(139,0,0,.7));
+    z-index:1;
+}
+
+/* Keep text above slideshow */
+.hero > div{
+    position:relative;
+    z-index:2;
+}
+@keyframes slideShow{
+    0%{
+        background-image:url('https://cdn.hibuwebsites.com/1cc7bcd9d881466a9d3d879d3d2ff3f4/dms3rep/multi/bryson-landscaping-inc-video-3e249586.jpg');
+    }
+    33%{
+        background-image:url('https://www.vintagetreecare.com/wp-content/uploads/2024/08/tree-removal-1024x683.webp');
+    }
+    66%{
+        background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80');
+    }
+    100%{
+        background-image:url('https://westernplows.com/wp-content/uploads/2021/05/wide-out-flared-adjustable-wing-snowplow-13.jpeg');
+    }
+}
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.services{
+    background:#f7f7f7;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+.card{
+    background:#fff;
+    padding:30px;
+    border:1px solid #eee;
+    transition:.4s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    border-color:var(--red);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.card h3{
+    margin-bottom:10px;
+    color:var(--red);
+}
+
+.why{
+    background:var(--dark);
+    color:#fff;
+    text-align:center;
+}
+.why .item{
+    padding:20px;
+}
+
+.seasonal{
+    background:
+        linear-gradient(rgba(0,0,0,.7),rgba(139,0,0,.7)),
+        url('https://images.unsplash.com/photo-1608889175123-8fefbda7b69a?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+    color:#fff;
+    text-align:center;
+}
+
+.testimonials{
+    background:#f4f4f4;
+}
+.testimonial{
+    background:#fff;
+    padding:30px;
+    border-left:4px solid var(--red);
+}
+
+.contact{
+    background:#fff;
+}
+form{
+    display:grid;
+    gap:15px;
+    margin-top:25px;
+}
+input,textarea{
+    padding:12px;
+    border:1px solid #ddd;
+}
+input:focus,textarea:focus{
+    outline:none;
+    border-color:var(--red);
+}
+
+footer{
+    background:var(--dark);
+    color:#bbb;
+    text-align:center;
+    padding:50px 8%;
+}
+footer p{margin-bottom:8px}
+footer a{
+    color:var(--silver);
+    text-decoration:none;
+    margin:0 10px;
+}
+footer a:hover{color:#fff}
+
+iframe{
+    width:100%;
+    height:300px;
+    border:0;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+    .hero h1{font-size:2.2rem}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h3>Bryson Landscaping</h3>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Transforming Outdoor Spaces with Precision & Power.</h1>
+        <p>Professional Landscaping & Property Solutions in Tallmadge, Ohio.</p>
+        <a href="#contact" class="btn">Get a FREE Estimate</a>
+        <a href="tel:13302478333" class="btn btn-outline">Call (330) 247-8333</a>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2>Full-Service Property Solutions</h2>
+    <div class="grid">
+        <div class="card"><h3>FREE Estimates</h3><p>Clear, transparent quotes with no surprises — just honest pricing.</p></div>
+        <div class="card"><h3>Landscaping & Lawn Care</h3><p>Meticulous maintenance and bold curb appeal that stands out.</p></div>
+        <div class="card"><h3>Tree & Shrub Care</h3><p>Precision trimming and long-term plant health management.</p></div>
+        <div class="card"><h3>Planting & Maintenance</h3><p>Strategic designs built to thrive season after season.</p></div>
+        <div class="card"><h3>Hardscaping</h3><p>Premium patios, retaining walls, and outdoor living spaces.</p></div>
+        <div class="card"><h3>Fencing</h3><p>Secure, professional installations with clean lines.</p></div>
+        <div class="card"><h3>Drainage</h3><p>Protect your investment with engineered water control solutions.</p></div>
+        <div class="card"><h3>Grading & Sloping</h3><p>Proper elevation that prevents pooling and erosion issues.</p></div>
+        <div class="card"><h3>Snow Removal & Salting</h3><p>Fast, dependable winter response for homes and businesses.</p></div>
+        <div class="card"><h3>Concrete</h3><p>Durable slabs, sidewalks, and custom pours built to last.</p></div>
+    </div>
+</section>
+
+<section id="why" class="why">
+    <h2>Why Choose Bryson Landscaping</h2>
+    <div class="grid">
+        <div class="item"><h3>Locally Owned & Operated</h3><p>Proudly serving Tallmadge and surrounding areas.</p></div>
+        <div class="item"><h3>Reliable & Professional Crew</h3><p>On-time, respectful, and detail-focused service.</p></div>
+        <div class="item"><h3>Year-Round Property Care</h3><p>From spring projects to winter snow management.</p></div>
+        <div class="item"><h3>High-Quality Materials</h3><p>Built using proven equipment and lasting craftsmanship.</p></div>
+    </div>
+</section>
+
+<section class="seasonal">
+    <h2>Snow Removal & Salting Services Available During Winter</h2>
+    <p>Stay safe and operational when winter hits Northeast Ohio. Reliable scheduling and fast response.</p>
+    <a href="#contact" class="btn">Secure Your Winter Plan</a>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="grid">
+        <div class="testimonial"><p>“Bryson Landscaping delivered beyond expectations. Clean, powerful results.”</p></div>
+        <div class="testimonial"><p>“They handle our commercial snow removal flawlessly every season.”</p></div>
+        <div class="testimonial"><p>“Professional crew and high-end workmanship from start to finish.”</p></div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Let’s Build Your Dream Yard</h2>
+    <p><strong>Bryson Landscaping</strong><br>
+    1405 Newton St<br>
+    Tallmadge, OH 44278<br>
+    Phone: (330) 247-8333</p>
+
+    <a href="tel:13306259675" class="btn">Click to Call</a>
+
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="tel" placeholder="Phone" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Service Needed">
+        <textarea rows="5" placeholder="Message"></textarea>
+        <button class="btn" type="submit">Submit E-mail Request</button>
+    </form>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.4447579655593!2d-81.46510992357388!3d41.03740201763061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88312bd0f42495dd%3A0x719222920fc866fa!2sAkron%20Skate%20Park!5e0!3m2!1sen!2sus!4v1772480286063!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<footer>
+    <p><strong>Bryson Landscaping</strong></p>
+    <p>1405 Newton St, Tallmadge, OH 44278</p>
+    <p>(330) 247-8333</p>
+    <p>Serving Tallmadge, OH and surrounding areas</p>
+    <p>© 2026 Bryson Landscaping. All Rights Reserved.</p>
+    <p>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a>
+    </p>
+</footer>
+
+</body>
+</html>
