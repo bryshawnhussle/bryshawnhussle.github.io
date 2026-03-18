@@ -256,17 +256,14 @@
     }
     
    @media (max-width:768px){
-    .brand {
-            display: flex;
-            align-items: center;
-            gap: 1px;
-            min-width:0;
     .hero h1{
         font-size:2.2rem;
     }
-     /* Keep one row */
+     /* Keep one row & reduce padding so content reaches edges */
     header{
         flex-wrap: nowrap;
+        padding-left: 4%;
+        padding-right: 4%;
     }
     /* Let brand shrink if needed */
     .brand{
