@@ -255,110 +255,127 @@
         margin-top:30px;
     }
     
-    @media(max-width:768px){
-        .hero h1{font-size:2.2rem}
+   @media (max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+    /* ✅ Allow header to stack cleanly on mobile */
+    header{
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+    /* Brand takes full row */
+    .brand{
+        width: 100%;
+    }
+    /* Nav moves to next line, aligned left */
+    header nav{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    /* Tighter spacing for small screens */
+    header nav a{
+        margin-left: 0;
+        margin-right: 16px;
     }
 </style>
 </head>
 
 <body>
-
-<header>
-    <div class="brand">
-        <img src="pictures/awarelogored.png" alt="Aware Service LLC logo">
-        <h3>Aware Service LLC</h3>
-    </div>
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div>
-        <h1>Transforming indoor & outdoor spaces with Care & affordability</h1>
-        <p>Professional Remodeling Solutions in Canton, Ohio.</p>
-        <a href="#contact" class="btn">Get a FREE Estimate</a>
-        <a href="tel:13302478333" class="btn btn-outline">Call (330) 814-2212</a>
-    </div>
-</section>
-
-<section id="services" class="services">
-    <h2>Full-Service Property Solutions</h2>
-    <div class="grid">
-        <div class="card"><h3>FREE Estimates</h3><p>Clear, transparent quotes with no surprises — just honest pricing.</p></div>
-        <div class="card"><h3>Care Coatings</h3><p>Floor epoxy, staining, electrostatic, fire or graffiti resistant options that are Eco-friendly and low vapor.</p></div>
-        <div class="card"><h3>Eletrical/Wiring</h3><p>Minor electrical / wiring services delivering safe, reliable installations and repairs—done neatly & efficiently.</p></div>
-        <div class="card"><h3>Home Repair</h3><p></p>Doors, gutters, windows, sealing, mold damage, hinges, mounts and more renovation needs.</div>
-        <div class="card"><h3>Hardscaping</h3><p>Grading, tenching, Brick & mortar, retaining walls, clearing & perfecting your outside space.</p></div>
-        <div class="card"><h3>Fencing</h3><p>Secure, professional installations with clean lines.</p></div>
-        <div class="card"><h3>Piping & Plumbing</h3><p>Toilets to sinks, pipes to leaks.</p></div>
-        <div class="card"><h3>Drywall</h3><p>Fixes, texturing, or new drywall hanging, taping, mudding, and sanding with precision and care.</p></div>
-        <div class="card"><h3>Demolition</h3><p>Fast, dependable deconstruction of sites and spaces.</p></div>
-        <div class="card"><h3>Powerwashing</h3><p>Remove years of dirt, grime, and buildup to restore your driveway, siding, decks, and walkways to pristine condition.</p></div>
-    </div>
-</section>
-
-<section id="why" class="why">
-    <h2>Why Choose AWARE Service LLC</h2>
-    <div class="grid">
-        <div class="item"><h3>Locally Owned & Operated</h3><p>Proudly serving Canton and surrounding areas.</p></div>
-        <div class="item"><h3>Independently Focused</h3><p>Respectful and detail-focused service planned around lasting customer relationships.</p></div>
-        <div class="item"><h3>Year-Round Property Care</h3><p>From spring projects to winter snow management.</p></div>
-        <div class="item"><h3>State Registered & Insured</h3><p>Peace of mind, knowing your project is protected every step of the way.</p></div>
-    </div>
-</section>
-
-<section class="seasonal">
-    <h2>Snow Removal & Salting Services Available During Winter</h2>
-    <p>Stay safe and operational when winter hits Northeast Ohio. Reliable scheduling and fast response.</p>
-    <a href="#contact" class="btn">Secure Your Winter Plan</a>
-</section>
-
-<section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="grid">
-        <div class="testimonial"><p>“AWARE Service delivered beyond expectations, Clean results.”</p></div>
-        <div class="testimonial"><p>“Aware Service did a wonderful job painting my basement walls and trim!! Zion and his crew were meticulous in their painting! Friendly & accommodating! I highly recommend them if you need painting done!”</p></div>
-        <div class="testimonial"><p>“Professional crew and high-end workmanship from start to finish.”</p></div>
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Let’s Build Together</h2>
-    <p><strong>AWARE Service LLC</strong><br>
-    1003 Dueber Ave SW<br>
-    Canton, OH 44706<br>
-    Phone: (330) 814-2212</p>
-
-    <a href="tel:13308142212" class="btn">Click to Call</a>
-
-    <form action="https://formspree.io/f/xqedrapv" method="post">
-        <input type="text" name="name" placeholder="First Name" required>
-        <input type="tel" name="phone" placeholder="Phone" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="services" placeholder="Service Needed">
-        <textarea rows="5" name="description" placeholder="Message" required></textarea>
-        <button class="btn" type="submit" value="submit">Submit E-mail Request</button>
-    </form>
-
-    <<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3020.6224823618636!2d-81.394491!3d40.792313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ3JzMyLjMiTiA4McKwMjMnNDAuMiJX!5e0!3m2!1sen!2sus!4v1773854658684!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
-<footer>
-    <p><strong>AWARE Service LLC</strong></p>
-    <p>1003 Dueber Ave SW, Canton, OH 44706</p>
-    <p>(330) 814-2212</p>
-    <p>Serving Canton, OH & surrounding areas</p>
-    <p>© 2025 AWARE service LLC. All Rights Reserved.</p>
-    <p>
-        <img src="pictures/facebook.webp" alt="facebook icon" width="1.5%" height="auto" style="vertical-align: middle;">
-        <a href="https://www.facebook.com/profile.php?id=61568760207686">Check Our Facebook</a>
-    </p>
-</footer>
-
+    <header>
+        <div class="brand">
+            <img src="pictures/awarelogored.png" alt="Aware Service LLC logo">
+            <h3>Aware Service LLC</h3>
+        </div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#why">Why Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div>
+            <h1>Transforming indoor & outdoor spaces with Care & affordability</h1>
+            <p>Professional Remodeling Solutions in Canton, Ohio.</p>
+            <a href="#contact" class="btn">Get a FREE Estimate</a>
+            <a href="tel:13302478333" class="btn btn-outline">Call (330) 814-2212</a>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <h2>Full-Service Property Solutions</h2>
+        <div class="grid">
+            <div class="card"><h3>FREE Estimates</h3><p>Clear, transparent quotes with no surprises — just honest pricing.</p></div>
+            <div class="card"><h3>Care Coatings</h3><p>Floor epoxy, staining, electrostatic, fire or graffiti resistant options that are Eco-friendly and low vapor.</p></div>
+            <div class="card"><h3>Eletrical/Wiring</h3><p>Minor electrical / wiring services delivering safe, reliable installations and repairs—done neatly & efficiently.</p></div>
+            <div class="card"><h3>Home Repair</h3><p></p>Doors, gutters, windows, sealing, mold damage, hinges, mounts and more renovation needs.</div>
+            <div class="card"><h3>Hardscaping</h3><p>Grading, tenching, Brick & mortar, retaining walls, clearing & perfecting your outside space.</p></div>
+            <div class="card"><h3>Fencing</h3><p>Secure, professional installations with clean lines.</p></div>
+            <div class="card"><h3>Piping & Plumbing</h3><p>Toilets to sinks, pipes to leaks.</p></div>
+            <div class="card"><h3>Drywall</h3><p>Fixes, texturing, or new drywall hanging, taping, mudding, and sanding with precision and care.</p></div>
+            <div class="card"><h3>Demolition</h3><p>Fast, dependable deconstruction of sites and spaces.</p></div>
+            <div class="card"><h3>Powerwashing</h3><p>Remove years of dirt, grime, and buildup to restore your driveway, siding, decks, and walkways to pristine condition.</p></div>
+        </div>
+    </section>
+    
+    <section id="why" class="why">
+        <h2>Why Choose AWARE Service LLC</h2>
+        <div class="grid">
+            <div class="item"><h3>Locally Owned & Operated</h3><p>Proudly serving Canton and surrounding areas.</p></div>
+            <div class="item"><h3>Independently Focused</h3><p>Respectful and detail-focused service planned around lasting customer relationships.</p></div>
+            <div class="item"><h3>Year-Round Property Care</h3><p>From spring projects to winter snow management.</p></div>
+            <div class="item"><h3>State Registered & Insured</h3><p>Peace of mind, knowing your project is protected every step of the way.</p></div>
+        </div>
+    </section>
+    
+    <section class="seasonal">
+        <h2>Snow Removal & Salting Services Available During Winter</h2>
+        <p>Stay safe and operational when winter hits Northeast Ohio. Reliable scheduling and fast response.</p>
+        <a href="#contact" class="btn">Secure Your Winter Plan</a>
+    </section>
+    
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="grid">
+            <div class="testimonial"><p>“AWARE Service delivered beyond expectations, Clean results.”</p></div>
+            <div class="testimonial"><p>“Aware Service did a wonderful job painting my basement walls and trim!! Zion and his crew were meticulous in their painting! Friendly & accommodating! I highly recommend them if you need painting done!”</p></div>
+            <div class="testimonial"><p>“Professional crew and high-end workmanship from start to finish.”</p></div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Let’s Build Together</h2>
+        <p><strong>AWARE Service LLC</strong><br>
+        1003 Dueber Ave SW<br>
+        Canton, OH 44706<br>
+        Phone: (330) 814-2212</p>
+    
+        <a href="tel:13308142212" class="btn">Click to Call</a>
+    
+        <form action="https://formspree.io/f/xqedrapv" method="post">
+            <input type="text" name="name" placeholder="First Name" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="services" placeholder="Service Needed">
+            <textarea rows="5" name="description" placeholder="Message" required></textarea>
+            <button class="btn" type="submit" value="submit">Submit E-mail Request</button>
+        </form>
+    
+        <<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3020.6224823618636!2d-81.394491!3d40.792313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQ3JzMyLjMiTiA4McKwMjMnNDAuMiJX!5e0!3m2!1sen!2sus!4v1773854658684!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <footer>
+        <p><strong>AWARE Service LLC</strong></p>
+        <p>1003 Dueber Ave SW, Canton, OH 44706</p>
+        <p>(330) 814-2212</p>
+        <p>Serving Canton, OH & surrounding areas</p>
+        <p>© 2025 AWARE service LLC. All Rights Reserved.</p>
+        <p>
+            <img src="pictures/facebook.webp" alt="facebook icon" width="1.5%" height="auto" style="vertical-align: middle;">
+            <a href="https://www.facebook.com/profile.php?id=61568760207686">Check Our Facebook</a>
+        </p>
+    </footer>
 </body>
-
 </html>
 
