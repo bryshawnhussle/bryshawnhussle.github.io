@@ -263,9 +263,10 @@
     header{
         flex-wrap: nowrap;
     }
-    /* Brand takes full row */
+    /* Let brand shrink if needed */
     .brand{
-        width: 100%;
+        min-width: 0;
+        flex: 1 1 auto;
     }
     /* Nav moves to next line, aligned left */
     header nav{
