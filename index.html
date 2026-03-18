@@ -69,6 +69,17 @@ header{
     box-shadow:0 2px 10px rgba(0,0,0,.1);
     z-index:1000;
 }
+.brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+}
+
+.brand img {
+        height: 42px; /* adjust size if needed */
+        width: auto;
+        display: block;
+}
 header h3{color:var(--red)}
 header nav a{
     margin-left:25px;
@@ -244,7 +255,10 @@ iframe{
 <body>
 
 <header>
-    <h3>Aware Service LLC</h3>
+    <div class="brand">
+        <img src="images/awarelogored.png" alt="Aware Service LLC logo">
+        <h3>Aware Service LLC</h3>
+    </div>
     <nav>
         <a href="#services">Services</a>
         <a href="#why">Why Us</a>
