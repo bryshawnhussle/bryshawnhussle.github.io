@@ -258,35 +258,41 @@
    @media (max-width:768px){
     .hero h1{
         font-size:2.2rem;
-    }
+        }
      /* Keep one row & reduce padding so content reaches edges */
     header{
         flex-wrap: nowrap;
         padding-left: 1%;
         padding-right: 0%;
-    }
+        }
     /* Let brand shrink if needed */
     .brand{
         min-width: 0;
         flex: 1 1 auto;
         gap: 7px; /* space between logo and title */
-    }
+        }
     /* Allow title to shrink instead of colliding */
     header h3{
         font-size: 16px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
+        }
        /* Nav stays on same row */
     header nav{
         flex: 0 1 auto;
-    }
+        }
     /* Tighter link spacing */
     header nav a{
         margin-left: 0px;
         font-size: 14px;
         margin-right: 12px;
+        }
+   }
+    .mobile{display: none}
+    @media screen and (max-width: 430px){
+        .mobile{display: block}
+        .desktop{display: none}
     }
 </style>
 </head>
@@ -295,7 +301,8 @@
     <header>
         <div class="brand">
             <img src="pictures/awarelogored.png" alt="Aware Service LLC logo">
-            <h3>Aware Service LLC</h3>
+            <h3 class="desktop">Aware Service LLC</h3>
+            <h3 class="mobile">Aware Service</h3>
         </div>
         <nav>
             <a href="#services">Services</a>
