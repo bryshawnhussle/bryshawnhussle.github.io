@@ -236,22 +236,33 @@
         border:0;
         margin-top:30px;
     }
-    .why{ 
-        background:var(--dark); 
-        color:#fff; text-align:center; 
-    } 
-    .why .item{ 
-        padding:20px; 
-    }
-
-.bundle{ 
-    background: 
-        linear-gradient(rgba(0,0,0,.7),rgba(139,0,0,.7)), 
-        url(pictures/deck.png); 
-    background-size: contain; 
-    color:#fff; 
+    
+   /* Side-by-side container */
+.split-sections{
+    display: flex;
+    align-items: stretch;
+}
+/* Each section takes half */
+.split-sections > section{
+    flex: 1;
+    padding: 60px 6%;
+}
+/* Your existing styles */
+.why{
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+}
+.why .item{
+    padding: 20px;
+}
+.bundle{
+    background:
+        linear-gradient(rgba(0,0,0,.7), rgba(139,0,0,.7)),
+        url("pictures/deck.png") center / contain no-repeat;
+    color:#fff;
     text-align:center;
-    }
+}
    
    @media (max-width:768px){
     .brand img {
@@ -359,22 +370,22 @@
         </div>
     </section>
     
-    <section id="why" class="why">
-        <h2>Why Choose AWARE Service LLC</h2>
-        <div class="grid">
-            <div class="item"><h3>Locally Owned & Operated</h3><p>Proudly serving Canton and surrounding areas.</p></div>
-            <div class="item"><h3>Independently Focused</h3><p>Respectful and detail-focused service planned around lasting customer relationships.</p></div>
-            <div class="item"><h3>Year-Round Property Care</h3><p>From spring projects to winter snow management.</p></div>
-            <div class="item"><h3>State Registered & Insured</h3><p>Peace of mind, knowing your project is protected every step of the way.</p></div>
-        </div>
-    </section>
-    
-    <section class="bundle">
-        <h2>Service Packages Available</h2>
-        <p>Casual bundling of multiple services can be cheaper for the customer. We are flexible in our negotiations. </p>
-        <a href="#contact" class="btn">Let's Bundle Up!</a>
-    </section>
-    
+    <div class="split-sections">
+        <section id="why" class="why">
+            <h2>Why Choose AWARE Service LLC</h2>
+            <div class="grid">
+                <div class="item"><h3>Locally Owned & Operated</h3><p>Proudly serving Canton and surrounding areas.</p></div>
+                <div class="item"><h3>Independently Focused</h3><p>Respectful and detail-focused service planned around lasting customer relationships.</p></div>
+                <div class="item"><h3>Year-Round Property Care</h3><p>From spring projects to winter snow management.</p></div>
+                <div class="item"><h3>State Registered & Insured</h3><p>Peace of mind, knowing your project is protected every step of the way.</p></div>
+            </div>
+        </section>
+        <section class="bundle">
+            <h2>Service Packages Available</h2>
+            <p>Casual bundling of multiple services can be cheaper for the customer. We are flexible in our negotiations. </p>
+            <a href="#contact" class="btn">Let's Bundle Up!</a>
+        </section>
+    </div>
     <section class="testimonials">
         <h2>What Our Clients Say</h2>
         <div class="grid">
