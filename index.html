@@ -262,6 +262,9 @@
         url("pictures/deck.png") center / cover no-repeat;
     color:#fff;
     text-align:center;
+    display: flex;              /* enables centering */
+    flex-direction: column;     /* stack elements vertically */
+    justify-content: center;    /* vertical center */
 }
    
    @media (max-width:768px){
@@ -291,9 +294,6 @@
         background-size: contain;
         color:#fff;
         text-align:center;
-        display: flex;              /* enables centering */
-        flex-direction: column;     /* stack elements vertically */
-        justify-content: center;    /* vertical center */
     }
     /* Allow title to shrink instead of colliding */
     header h3{
