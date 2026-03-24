@@ -236,31 +236,22 @@
         border:0;
         margin-top:30px;
     }
-    .why{
-    background: var(--dark);
-    color: #fff;
-    text-align: left;          /* text left */
-    padding: 60px 0;
-}
+    .why{ 
+        background:var(--dark); 
+        color:#fff; text-align:center; 
+    } 
+    .why .item{ 
+        padding:20px; 
+    }
 
-.bundle{
-    background:
-        linear-gradient(rgba(0,0,0,.7), rgba(139,0,0,.7)),
-        url("pictures/deck.png") center / contain no-repeat;
-    color: #fff;
-    text-align: right;         /* text right */
-    padding: 60px 0;
-}
-
-/* Center the inner content width for BOTH sections */
-.why > *,
-.bundle > *{
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 8%;
-    padding-right: 8%;
-}
+.bundle{ 
+    background: 
+        linear-gradient(rgba(0,0,0,.7),rgba(139,0,0,.7)), 
+        url(pictures/deck.png); 
+    background-size: contain; 
+    color:#fff; 
+    text-align:center;
+    }
    
    @media (max-width:768px){
     .brand img {
