@@ -236,31 +236,32 @@
         border:0;
         margin-top:30px;
     }
-    .bundle{
-        background:
-            linear-gradient(rgba(0,0,0,.7),rgba(139,0,0,.7)),
-            url(pictures/deck.png);
-        background-size: contain;
-        color:#fff;
-        text-align:center;
-    }
     .why{
-        background: var(--dark);
-        color: #fff;
-        text-align: left;         
-        padding: 60px 8%;          
-    }
-    .why h2{
-        margin-bottom: 24px;
-    }
-    .why .grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 24px;
-    }
-    .why .item{
-        padding: 20px;
-    }
+    background: var(--dark);
+    color: #fff;
+    text-align: left;          /* text left */
+    padding: 60px 0;
+}
+
+.bundle{
+    background:
+        linear-gradient(rgba(0,0,0,.7), rgba(139,0,0,.7)),
+        url("pictures/deck.png") center / contain no-repeat;
+    color: #fff;
+    text-align: right;         /* text right */
+    padding: 60px 0;
+}
+
+/* Center the inner content width for BOTH sections */
+.why > *,
+.bundle > *{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+   
    @media (max-width:768px){
     .brand img {
             height: 50px; 
@@ -281,6 +282,14 @@
         flex: 1 1 auto;
         gap: 7px; /* space between logo and title */
         }
+    .bundle{
+        background:
+            linear-gradient(rgba(0,0,0,.7),rgba(139,0,0,.7)),
+            url(pictures/deck.png);
+        background-size: contain;
+        color:#fff;
+        text-align:center;
+    }
     /* Allow title to shrink instead of colliding */
     header h3{
         font-size: 16px;
@@ -347,7 +356,7 @@
         <h2>Full-Service Property Solutions</h2>
         <div class="grid">
             <div class="card"><h3>FREE Estimates</h3><p>Clear, transparent quotes with no surprises — just honest pricing.</p></div>
-            <div class="card"><h3>Commercial</h3><p>Warehouse or campus fixes on a large scale.</p></div>
+            <div class="card"><h3>Commercial</h3><p>Stores, offices, large scale locations.</p></div>
             <div class="card"><h3>Care Coatings</h3><p>Floor epoxy, staining, electrostatic, fire or graffiti resistant options that are Eco-friendly and low vapor.</p></div>
             <div class="card"><h3>Kitchen & Bath</h3><p> Clean remodels & reliable installations with no short-cuts.</p></div>
             <div class="card"><h3>Home Repair</h3><p></p>Doors, gutters, windows, sealing, mold damage, hinges, mounts and more renovation needs.</div>
