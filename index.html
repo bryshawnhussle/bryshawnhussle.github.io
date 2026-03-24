@@ -190,15 +190,6 @@
         color:var(--red);
     }
     
-    .why{
-        background:var(--dark);
-        color:#fff;
-        text-align:center;
-    }
-    .why .item{
-        padding:20px;
-    }
-    
     .testimonials{
         background:#f4f4f4;
     }
@@ -253,6 +244,23 @@
         color:#fff;
         text-align:center;
     }
+    .why{
+        background: var(--dark);
+        color: #fff;
+        text-align: left;         
+        padding: 60px 8%;          
+    }
+    .why h2{
+        margin-bottom: 24px;
+    }
+    .why .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+    }
+    .why .item{
+        padding: 20px;
+    }
    @media (max-width:768px){
     .brand img {
             height: 50px; 
@@ -290,6 +298,15 @@
         font-size: 14px;
         margin-right: 12px;
         }
+    .why{
+        background:var(--dark);
+        color:#fff;
+        text-align:center;
+    }
+    .why .item{
+        padding:20px;
+    }
+    
     .social{
         width: 10vw;
         hieght: auto;
