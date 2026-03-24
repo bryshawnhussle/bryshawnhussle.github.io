@@ -411,11 +411,11 @@
         <a href="tel:13308142212" class="btn">Click to Call</a>
     
         <form action="https://formspree.io/f/xqedrapv" method="post">
-            <input type="text" name="name" placeholder="First Name" required>
-            <input type="tel" name="phone" placeholder="Phone" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="services" placeholder="Service Needed">
-            <textarea rows="5" name="description" placeholder="Message" required></textarea>
+            <input type="text" name="name" placeholder="First Name" required minlength="2" maxlength="40" pattern="[A-Aa-z\s'-]+">
+            <input type="tel" name="phone" placeholder="Phone" required inputmode="tel" pattern="[0-9+\-\s()]{7,20}">
+            <input type="email" name="email" placeholder="Email" required maxlength="254">
+            <input type="text" name="services" placeholder="Service(s) Needed" maxlength="80">
+            <textarea rows="5" name="description" placeholder="Message" required minlength="8" maxlength="1000"></textarea>
             <button class="btn" type="submit" value="submit">Submit E-mail Request</button>
         </form>
     
