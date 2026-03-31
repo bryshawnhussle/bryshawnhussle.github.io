@@ -196,10 +196,15 @@
     }
     .testimonial{
         background:#fff;
-        padding:30px;
+        padding:28px;
         border-left:4px solid var(--red);
+        display: flex;
+        flex-direction: column;
     }
-    
+    .testpeople{
+        color: var(--red);
+        margin-top: auto; /* pushes it to the bottom */
+    }
     .contact{
         background:#fff;
     }
@@ -395,12 +400,18 @@
     <section class="testimonials">
         <h2>What Our Clients Say</h2>
         <div class="grid">
-            <div class="testimonial"><p>“AWARE Service delivered beyond expectations, You guys are awesome!”</p>
-                <br><p>- Rochelle C.</p></div>
-            <div class="testimonial"><p>“Aware Service did a wonderful job painting my basement walls & trim!! Zion & his crew were meticulous in their painting! Friendly & accommodating! I highly recommend them if you need painting done!”</p>
-            <br><p>- Joe F.</p></div>
-            <div class="testimonial"><p>“Professional crew and high-end workmanship from start to finish.”</p>
-            <br><p>- John D.</p></div>
+            <div class="testimonial">
+                <p>“AWARE Service delivered beyond expectations, You guys are awesome!”</p>
+                <p class="testpeople">- Rochelle C.</p>
+            </div>
+            <div class="testimonial">
+                <p>“Aware Service did a wonderful job painting my basement walls & trim!! Zion & his crew were meticulous in their painting! Friendly & accommodating! I highly recommend them if you need painting done!”</p>
+                <p class="testpeople">- Joe F.</p>
+            </div>
+            <div class="testimonial">
+                <p>“Professional crew and high-end workmanship from start to finish.”</p>
+                <p class="testpeople">- John D.</p>
+            </div>
         </div>
     </section>
     
