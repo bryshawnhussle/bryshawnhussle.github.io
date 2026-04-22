@@ -291,8 +291,11 @@
     color:#ff0000;
     font-size:17px;
 }
- #formbutton-container {
+ #formbutton-container iframe {
     z-index: 9999 !important;
+     width: 100vw !important;
+     height: 100vh !important;
+     max-height: 100vh !important;
 }
    
    @media (max-width:768px){
@@ -488,19 +491,8 @@
         action: "https://formspree.io/f/mbdqzdvb",
         title: "How can we help?",
         fields: [
-          { 
-            type: "email", 
-            label: "Email:", 
-            name: "email",
-            required: true,
-            placeholder: "your@email.com"
-          },
-          {
-            type: "textarea",
-            label: "Message:",
-            name: "message",
-            placeholder: "What's on your mind?",
-          },
+          { type: "email", label: "Email:", name: "email", required: true, placeholder: "your@email.com" },
+          {type: "textarea", label: "Message:",  name: "message",  placeholder: "What's on your mind?",},
           { type: "submit" }      
         ],
         styles: {
