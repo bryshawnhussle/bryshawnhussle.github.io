@@ -488,6 +488,13 @@
         (formbutton.q=formbutton.q||[]).push(arguments)
     };
     formbutton("create", {
+        styles: {
+            title: {
+            backgroundColor: "#f5850b"
+          },
+             button: {
+            backgroundColor: "#f5850b"
+          },
         action: "https://formspree.io/f/mbdqzdvb",
         theme: "classic",
         title: "How can we help?",
@@ -505,14 +512,6 @@
           {type: "textarea", label: "Message:",  name: "message",  placeholder: "What's on your mind?", required: true},
           {type: "submit" }      
         ],
-        styles: {
-          title: {
-            backgroundColor: "#f5850b"
-          },
-          button: {
-            backgroundColor: "#f5850b"
-          }
-        }
     });
   </script>
 </body>
