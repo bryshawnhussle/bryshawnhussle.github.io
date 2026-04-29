@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>About | AWARE Service LLC</title>
+<meta name="description" content="Learn more about AWARE Service LLC, our mission, and the team behind our residential and commercial property services in Canton, Ohio.">
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    :root{
+        --red:#8B0000;
+        --darkred:#5a0000;
+        --silver:#c0c0c0;
+        --white:#ffffff;
+        --dark:#111;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+        font-family:'Montserrat',sans-serif;
+        background:var(--white);
+        color:var(--dark);
+        line-height:1.6;
+    }
+
+    h1,h2,h3{
+        font-family:'Oswald',sans-serif;
+        text-transform:uppercase;
+        letter-spacing:1px;
+    }
+
+    section{padding:90px 8%}
+
+    header{
+        position:fixed;
+        width:100%;
+        height:72px;
+        background:#fff;
+        padding:18px 8%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        box-shadow:0 2px 10px rgba(0,0,0,.1);
+        z-index:1000;
+    }
+
+    .brand{
+        display:flex;
+        align-items:center;
+        gap:12px;
+    }
+
+    .brand img{
+        height:60px;
+        width:auto;
+    }
+
+    header h3{
+        color:var(--red);
+        white-space:nowrap;
+    }
+
+    nav a{
+        margin-left:25px;
+        text-decoration:none;
+        color:#333;
+        font-weight:600;
+    }
+
+    nav a:hover{color:var(--red)}
+
+    .hero{
+        height:60vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        background:linear-gradient(rgba(0,0,0,.7), rgba(139,0,0,.7)),
+        url("pictures/example1.jpg") center/cover no-repeat;
+        color:#fff;
+    }
+
+    .content-grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:40px;
+        margin-top:40px;
+    }
+
+    .box{
+        background:#f7f7f7;
+        padding:25px;
+        border-left:4px solid var(--red);
+    }
+
+    .image-box{
+        width:100%;
+        height:250px;
+        background:#ddd;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#666;
+    }
+
+    footer{
+        background:var(--dark);
+        color:#bbb;
+        text-align:center;
+        padding:50px 8%;
+        margin-top:60px;
+    }
+
+    footer a{color:var(--silver); text-decoration:none}
+    footer a:hover{color:#fff}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="brand">
+        <img src="pictures/awarelogored.png" alt="AWARE Service LLC logo">
+        <h3>AWARE Service LLC</h3>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>About AWARE Service LLC</h1>
+        <p>Company overview / mission statement goes here</p>
+    </div>
+</section>
+
+<section>
+    <h2>Who We Are</h2>
+
+    <div class="content-grid">
+        <div class="box">
+            <h3>Company Overview</h3>
+            <p><!-- Add company description here --></p>
+        </div>
+
+        <div class="box">
+            <h3>Owner Information</h3>
+            <p><!-- Add owner bio here --></p>
+        </div>
+
+        <div class="box">
+            <h3>Our Mission</h3>
+            <p><!-- Add mission statement here --></p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Images</h2>
+
+    <div class="content-grid">
+        <div class="image-box">
+            Image Placeholder 1
+        </div>
+
+        <div class="image-box">
+            Image Placeholder 2
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p><strong>AWARE Service LLC</strong></p>
+    <p>1003 Dueber Ave SW, Canton, OH 44706</p>
+    <p>(330) 814-2212</p>
+    <p>© 2025 AWARE Service LLC</p>
+</footer>
+
+</body>
+</html>
