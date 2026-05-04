@@ -206,6 +206,16 @@
     <h2>Gallery</h2>
     <div class="image-wrapper">
         <button class="arrow left" onclick="scrollImages(-1)">&#10094;</button>
+            <script>
+            function scrollImages(direction) {
+                const container = document.getElementById("imageScroll");
+                const scrollAmount = container.clientWidth; // scroll by one full "view"
+                container.scrollBy({
+                    left: direction * scrollAmount,
+                    behavior: "smooth"
+                });
+            }
+            </script>
         <div class="image-scroll" id="imageScroll">
             <div class="image-track">
                 <div class="image-box">Image 1</div>
